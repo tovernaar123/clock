@@ -12,7 +12,7 @@ float hourd;
 float hour;
 int r = 350;
 int r2 = r+75;
-int r3 = r+ 200;
+int r3 = r+ 150;
 int h = hour();
 int m = minute();
 int s = second();
@@ -47,12 +47,13 @@ void draw() {
   h = hour();
   m = minute();
   s = second();
-  background(0);
+  background(#C0C0C0);
    
-  fill(255, 255, 255); 
-  stroke(255,255,255);
+
+  stroke(#000080);
   ellipseMode(RADIUS);
-  fill(45);
+  fill(  #0095B6);
+  strokeWeight(20);
   ellipse(width/2, height/2, r3, r3);
   
   for( int i =0; i < num.length; i++) {
